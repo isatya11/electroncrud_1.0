@@ -30,13 +30,15 @@ window.onload = function() {
         emp_id:{
           required: validators.required,
           integer: validators.integer,
-          min: validators.minValue(1)
+          min: validators.minValue(1),
+
         },
         lastname:{
           required: validators.required
         },
         email:{
-          required: validators.required
+          required: validators.required,
+          email: validators.email,
         }
       }
     },
