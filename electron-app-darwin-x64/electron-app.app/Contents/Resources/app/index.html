@@ -1,0 +1,118 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Employee Portal</title>
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>  
+  <div class="container">
+    <div id="app">
+    <h3>{{product}}</h3>
+    </div>
+    <!-- <form name="form" onsubmit="return validateform()"> -->
+    <div class="row">
+      <div class="five columns">
+        <label for="firstname">Employee Id</label>
+        <input class="u-full-width" placeholder="id" id="emp_id" type="number" aria-required="true" required/>
+      </div>
+      <div class="five columns">
+        <label for="firstname">Firstname</label>
+        <input name="firstname" class="u-full-width" placeholder="firstname" id="firstname" type="text" required/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="five columns">
+        <label for="lastname">Lastname</label>
+        <input name="lastname" class="u-full-width" placeholder="lastname" id="lastname" type="text">
+      </div>
+      <div class="five columns">
+        <label for="email">Email</label>
+        <input name="email" class="u-full-width" placeholder="John@c.com" id="email" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="five columns">
+        <label for="gender">Gender</label>
+        <input name="" class="u-full-width" placeholder="male/female" id="gender" type="text">
+      </div>
+      <div class="five columns">
+        <label for="dob">dob</label>
+        <input name="" class="u-full-width" placeholder="01/01/2001" id="dob" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="five columns">
+        <label for="mobile">mobile</label>
+        <input name="" class="u-full-width" placeholder="9090909090" id="mobile" type="text">
+      </div>
+      <div class="five columns">
+        <label for="address1">address1</label>
+        <input name="" class="u-full-width" placeholder="localty" id="address1" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="five columns">
+        <label for="address2">address2</label>
+        <input class="u-full-width" placeholder="city" id="address2" type="text">
+      </div>
+      <div class="five columns">
+        <label for="pincode">pincode</label>
+        <input name="" class="u-full-width" placeholder="400034" id="pincode" type="text">
+      </div>
+    </div>
+    <div class="row">
+      <div class="five columns">
+        <label for="countrycode">country code</label>
+        <input name="" class="u-full-width" placeholder="91" id="countrycode" type="number">
+      </div>
+    </div>
+    <div class="row" id="btn">
+      <div class="two columns">
+        <label for="add" class="invisible">x</label>
+        <input name=""  class="button-primary3" value="Add" id="add" type="button">
+      
+        <label for="add" class="invisible">x</label>
+        <input name="" class="button-primary" value="update" id="update" type="button">
+      </div>
+    </div>
+  <!-- </form> -->
+    <div class="row">
+      <h3>All Employees:</h3>
+      <table class="u-full-width">
+        <thead>
+          <tr>
+            <th>Employee Id</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>gender</th>
+            <th>dob</th>
+            <th>mobile</th>
+            <th>address1</th>
+            <th>address2</th>
+            <th>pincode</th>
+            <th>countrycode</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <!-- <script src="index.js"></script> -->
+  <script type="text/javascript">
+    var remote = require('electron').remote;
+    document.addEventListener('keydown', function (e) {
+      if (e.which === 123) {
+        remote.getCurrentWindow().webContents.openDevTools();
+      } else if (e.which === 116) {
+        location.reload();
+      }
+    });
+</script>
+</body>
+</html>

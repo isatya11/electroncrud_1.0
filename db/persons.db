@@ -1,0 +1,4 @@
+{"_id":3,"firstname":"vivek","lastname":"kumar","email":"vivek2259@gmail.com","gender":"male","dob":"31/03/1995","mobile":"8038387293","address1":"New Alipore","address2":"Kolkata","pincode":"700053","countrycode":"91"}
+{"_id":4,"firstname":"Hari","lastname":"Prasad","email":"hari@gmail.com","gender":"male","dob":"02/04/1995","mobile":"9879976789","address1":"pune","address2":"kjhk","pincode":"400023","countrycode":"87"}
+{"_id":3,"firstname":"Vivek","lastname":"kumar","email":"vivek2259@gmail.com","gender":"male","dob":"31/03/1995","mobile":"8038387293","address1":"New Alipore","address2":"Kolkata","pincode":"700053","countrycode":"91"}
+{"_id":1,"firstname":"Mayank ","lastname":"Bhasin","email":"mayankbhasin@gmail.com","gender":"Male","dob":"16/06/1984","mobile":"8420002620","address1":"Ravindrapally","address2":"Kharagapur","pincode":"7213001","countrycode":"91"}
