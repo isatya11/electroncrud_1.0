@@ -20,24 +20,24 @@
         <div class="row">
           <div class="five columns">
             <label for="firstname">First Name:</label>
-            <input v-model="form.firstname" id="firstname">
+            <input class="u-full-width" v-model="form.firstname" id="firstname" type="text">
             <p v-if="$v.form.firstname.$invalid" class="error-message">FirstName is required</p>
           </div>
           <div class="five columns">
             <label for="emp_id">Employee Id:</label>
-            <input v-model.number="form.emp_id" id="emp_id">
+            <input class="u-full-width" v-model.number="form.emp_id" id="emp_id" type="number">
             <p v-if="$v.form.emp_id.$invalid" class="error-messemp_id">Employee Id is required</p>
           </div>
         </div>
         <div class="row">
           <div class="five columns">
             <label for="lastname">Last Name:</label>
-            <input v-model="form.lastname" id="lastname">
+            <input class="u-full-width" v-model="form.lastname" id="lastname" type="text">
             <p v-if="$v.form.lastname.$invalid" class="error-message">Last Name is required</p>
           </div>
           <div class="five columns">
             <label for="email">email:</label>
-            <input v-model="form.email" id="email">
+            <input class="u-full-width" v-model="form.email" id="email" type="text">
             <p v-if="$v.form.email.$invalid" class="error-message">email is required</p>
           </div>
         </div>  
