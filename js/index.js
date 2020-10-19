@@ -15,17 +15,17 @@ window.onload = function() {
     data(){
       return{
         form: {
-          name: null,
-          age: null,
+          firstname: null,
+          emp_id: null,
         }
       }
     },
     validations:{
       form:{
-        name:{
+        firstname:{
           required: validators.required
         },
-        age:{
+        emp_id:{
           required: validators.required,
           integer: validators.integer,
           min: validators.minValue(1)
