@@ -17,6 +17,8 @@ window.onload = function() {
         form: {
           firstname: null,
           emp_id: null,
+          lastname: null,
+          email: null
         }
       }
     },
@@ -29,6 +31,12 @@ window.onload = function() {
           required: validators.required,
           integer: validators.integer,
           min: validators.minValue(1)
+        },
+        lastname:{
+          required: validators.required
+        },
+        email:{
+          required: validators.required
         }
       }
     },

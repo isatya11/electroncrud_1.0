@@ -17,17 +17,30 @@
     <div id = 'cont'>
       <h1>Form Validation</h1>
       <form @submit.prevent="submitForm" autocomplete="off">
-        <div class="five columns">
-          <label for="firstname">First Name:</label>
-          <input v-model="form.firstname" id="firstname">
-          <p v-if="$v.form.firstname.$invalid" class="error-message">FirstName is required</p>
+        <div class="row">
+          <div class="five columns">
+            <label for="firstname">First Name:</label>
+            <input v-model="form.firstname" id="firstname">
+            <p v-if="$v.form.firstname.$invalid" class="error-message">FirstName is required</p>
+          </div>
+          <div class="five columns">
+            <label for="emp_id">Employee Id:</label>
+            <input v-model.number="form.emp_id" id="emp_id">
+            <p v-if="$v.form.emp_id.$invalid" class="error-messemp_id">Employee Id is required</p>
+          </div>
         </div>
-        <div class="five columns">
-          <label for="emp_id">Employee Id:</label>
-          <input v-model.number="form.emp_id" id="emp_id">
-          <p v-if="$v.form.emp_id.$invalid" class="error-messemp_id">Employee Id is required</p>
-        </div>
-        <div>
+        <div class="row">
+          <div class="five columns">
+            <label for="lastname">Last Name:</label>
+            <input v-model="form.lastname" id="lastname">
+            <p v-if="$v.form.lastname.$invalid" class="error-message">Last Name is required</p>
+          </div>
+          <div class="five columns">
+            <label for="email">email:</label>
+            <input v-model="form.email" id="email">
+            <p v-if="$v.form.email.$invalid" class="error-message">email is required</p>
+          </div>
+        </div>  
           <button :disabled="$v.form.$invalid">Submit</button>
         </div>
       </form>
